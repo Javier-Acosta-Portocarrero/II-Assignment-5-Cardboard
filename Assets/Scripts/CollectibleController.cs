@@ -12,6 +12,7 @@ public class CollectibleController : MonoBehaviour
 
     private ObjectController totemController;
     private Rigidbody rb;
+    private AudioSource audioSource;
     private bool moving = false;
     private bool gazedAt = false;
     private bool collected = false;
@@ -19,6 +20,7 @@ public class CollectibleController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         GameObject totem = GameObject.FindGameObjectWithTag(totemTag);
         totemController = totem.GetComponent<ObjectController>();
@@ -81,6 +83,7 @@ public class CollectibleController : MonoBehaviour
 
     private void Collect()
     {
+        audioSource.Play();
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
         foreach (Renderer renderer in renderers)
         {
