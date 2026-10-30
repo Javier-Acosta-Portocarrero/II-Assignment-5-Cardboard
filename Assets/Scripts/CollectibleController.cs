@@ -42,7 +42,7 @@ public class CollectibleController : MonoBehaviour
             return;
 
         Vector3 desiredVelocity = Vector3.zero;
-        if (moving && !collected && playerCamera != null)
+        if (moving && playerCamera != null)
         {
             Vector3 target = playerCamera.position;
             target.y = rb.position.y;
