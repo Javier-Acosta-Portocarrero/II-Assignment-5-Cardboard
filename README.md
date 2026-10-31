@@ -8,13 +8,11 @@ En esta práctica he trabajado con Cardboard en Unity para crear una escena que 
 
 En este primer ejercicio creé el proyecto de Unity para utilizar Cardboard y realicé pruebas con su funcionamiento. Configuré el proyecto para Android y probé la generación de una APK, con el objetivo de ejecutar la escena desde el móvil y experimentar con la visualización mediante Cardboard.
 
-![Ejercicio 1](./gifs-readme/ejercicio1.gif)
-
 ## Ejercicio 2
 
-En este ejercicio preparé la escena en la que se desplaza el jugador. Creé un **Terrain** y modifiqué su relieve para formar montañas y colinas alrededor de la zona de juego. Utilicé la herramienta **Paint Trees** del Terrain para distribuir los árboles y **Paint Details** para añadir la hierba. Para ambientar el bosque incorporé el paquete **Lowpoly Environments de Polytope Studio**, un molino y elementos del asset **Little Ghosts**. También utilicé otro paquete de animales, del que añadí un **ciervo y una gallina**, y un asset para el **cielo**. Por último, incorporé sonidos para mejorar la ambientación de la escena.
+En este ejercicio preparé la escena en la que se desplaza el jugador. Creé un **Terrain** y modifiqué su relieve para formar montañas y colinas alrededor de la zona de juego. Utilicé la herramienta **Paint Trees** del Terrain para distribuir los árboles y **Paint Details** para añadir la hierba. Para ambientar el bosque incorporé el paquete **Lowpoly Environments de Polytope Studio**, un molino y elementos del asset **Little Ghosts**. También utilicé otro paquete de animales, del que añadí un ciervo y tres gallinas, y un asset para el cielo con skybox. Por último, incorporé sonidos para la ambientación, incluyendo música de fondo.
 
-Implementé el desplazamiento del jugador para que pueda avanzar **hacia la dirección en la que mira**, o moverse utilizando un **mando**. Además, añadí objetos coleccionables que el jugador recoge al mirarlos desde una distancia suficientemente corta. Para detectar qué objeto está mirando utilicé un `Physics.Raycast` desde la cámara y Colliders en los objetos interactivos, tomando como referencia el funcionamiento de `OnPointerEnter()` del script `ObjectController` proporcionado como base.
+Implementé el desplazamiento del jugador para que pueda avanzar hacia la dirección en la que mira, o moverse utilizando un mando. Además, añadí objetos coleccionables que el jugador recoge al mirarlos desde una distancia suficientemente corta. Para detectar qué objeto está mirando utilicé un `Physics.Raycast` desde la cámara y Colliders en los objetos interactivos, tomando como referencia el funcionamiento de `OnPointerEnter()` del script `ObjectController` proporcionado como base.
 
 ![Ejercicio 2](./gifs-readme/ejercicio2.gif)
 
